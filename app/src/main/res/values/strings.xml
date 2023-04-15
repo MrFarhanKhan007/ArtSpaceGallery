@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ArtSpaceGallery</string>
+
+
+    <string name="modric">Luka Modric</string>
+    <string name="modricYEAR">2023, Real Madrid</string>
+
+    <string name="cr7">Cristiano Ronaldo</string>
+    <string name="cr7YEAR">2017, Real Madrid</string>
+
+    <string name="benzema">Karim Benzema</string>
+    <string name="benzemaYEAR">2023, Real Madrid</string>
+
+    <string name="ramos">Sergio Ramos</string>
+    <string name="ramosYEAR">2017, Real Madrid</string>
+
+
+
+    <!--    <string name="carvajal"></string>
+          <string name="navas"></string>-->
+    <!--    <string name="marcelo"></string>-->
+    <!--    <string name="bale"></string>-->
+    <!--    <string name="kroos"></string>-->
+    <!--    <string name="casemiro"></string>-->
+    <!--    <string name="varane"></string>-->
+
+</resources>
