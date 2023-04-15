@@ -1,3 +1,5 @@
+<img src="./docnew.png" width="800" />
+
 # 🎨 ArtSpaceGallery
 Welcome to ArtSpaceGallery, a repository for football lovers, mainly Real Madrid CF fans to see the image gallery of their favourite players.Currently the database contains few players but with the subsequent months, the database will keep on increasing.
 
