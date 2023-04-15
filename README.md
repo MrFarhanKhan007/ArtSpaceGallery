@@ -6,6 +6,9 @@ To get started with ArtSpaceGallery, simply clone this repository and run the ap
 
 ' git clone https://github.com/MrFarhanKhan007/ArtSpaceGallery.git '
 
+## Made Using:
+Kotlin and Jetpack Compose
+
 ## 🎨 Player Categories
 Real Madrid Players Gallery features player images in a variety of categories, including:
 
