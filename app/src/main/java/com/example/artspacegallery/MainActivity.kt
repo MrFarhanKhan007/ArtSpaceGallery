@@ -53,30 +53,33 @@ var font1 = FontFamily(
 @Composable
 fun ArtSpaceAppUI() {
 
-    val firstArtwork = R.drawable.modric
-    val secondArtwork = R.drawable.cr7
-    val thirdArtwork = R.drawable.benzema
-    val fourthArtwork = R.drawable.ramos
+    val firstArtwork = R.drawable.navas
+    val secondArtwork = R.drawable.ramos
+    val thirdArtwork = R.drawable.varane
+    val fourthArtwork = R.drawable.marcelo
+    val fifthArtwork = R.drawable.carvajal
+    val sixthArtwork = R.drawable.kroos
+    val seventhArtwork = R.drawable.modric
+    val eighthArtwork = R.drawable.caasemiro
+    val ninthArtwork = R.drawable.bale
+    val tenthArtwork = R.drawable.cr7
+    val eleventhArtwork = R.drawable.benzema
+
 
     var title by remember {
-        mutableStateOf(R.string.modric)
+        mutableStateOf(R.string.navas)
     }
 
     var year by remember {
-        mutableStateOf(R.string.modricYEAR)
+        mutableStateOf(R.string.navasYEAR)
     }
 
     var currentArtwork by remember {
         mutableStateOf(firstArtwork)
     }
 
-    var imageSource by remember {
-        mutableStateOf(currentArtwork)
-    }
 
-
-
-    Heading(modifier = Modifier)
+    Heading()
 
     Column(
         modifier = Modifier.fillMaxSize(),
@@ -84,7 +87,7 @@ fun ArtSpaceAppUI() {
     ) {
 
 
-        ArtworkDisplay(currentArtwork = currentArtwork, modifier = Modifier)
+        ArtworkDisplay(currentArtwork = currentArtwork)
 
         Spacer(modifier = Modifier.height(16.dp))
 
@@ -103,25 +106,62 @@ fun ArtSpaceAppUI() {
                 onClick = {
                     when (currentArtwork) {
                         firstArtwork -> {
-                            currentArtwork = fourthArtwork
-                            title = R.string.ramos
-                            year = R.string.ramosYEAR
-                        }
-                        secondArtwork -> {
-                            currentArtwork = firstArtwork
-                            title = R.string.modric
-                            year = R.string.modricYEAR
-                        }
-                        thirdArtwork -> {
-                            currentArtwork = secondArtwork
-                            title = R.string.cr7
-                            year = R.string.cr7YEAR
-                        }
-                        fourthArtwork -> {
-                            currentArtwork = thirdArtwork
+                            currentArtwork = eleventhArtwork
                             title = R.string.benzema
                             year = R.string.benzemaYEAR
                         }
+                        secondArtwork -> {
+                            currentArtwork = firstArtwork
+                            title = R.string.navas
+                            year = R.string.navasYEAR
+                        }
+                        thirdArtwork -> {
+                            currentArtwork = secondArtwork
+                            title = R.string.ramos
+                            year = R.string.ramosYEAR
+                        }
+                        fourthArtwork -> {
+                            currentArtwork = thirdArtwork
+                            title = R.string.varane
+                            year = R.string.varaneYEAR
+                        }
+                        fifthArtwork -> {
+                            currentArtwork = fourthArtwork
+                            title = R.string.marcelo
+                            year = R.string.marceloYEAR
+                        }
+                        sixthArtwork -> {
+                            currentArtwork = fifthArtwork
+                            title = R.string.carvajal
+                            year = R.string.carvajalYEAR
+                        }
+                        seventhArtwork -> {
+                            currentArtwork = sixthArtwork
+                            title = R.string.kroos
+                            year = R.string.kroosYEAR
+                        }
+                        eighthArtwork -> {
+                            currentArtwork = seventhArtwork
+                            title = R.string.modric
+                            year = R.string.modricYEAR
+                        }
+                        ninthArtwork -> {
+                            currentArtwork = eighthArtwork
+                            title = R.string.casemiro
+                            year = R.string.casemiroYEAR
+                        }
+                        tenthArtwork -> {
+                            currentArtwork = ninthArtwork
+                            title = R.string.bale
+                            year = R.string.baleYEAR
+                        }
+                        eleventhArtwork -> {
+                            currentArtwork = tenthArtwork
+                            title = R.string.cr7
+                            year = R.string.cr7YEAR
+                        }
+
+
                     }
                 }, colors = ButtonDefaults.buttonColors(
                     backgroundColor = Color(0xffFFCCCB)
@@ -131,11 +171,9 @@ fun ArtSpaceAppUI() {
                     defaultElevation = 5.dp,
                     pressedElevation = 0.dp,
                     focusedElevation = 0.dp
-
                 )
 
             )
-
             {
                 Text(
                     text = "Previous",
@@ -150,26 +188,69 @@ fun ArtSpaceAppUI() {
                     when (currentArtwork) {
                         firstArtwork -> {
                             currentArtwork = secondArtwork
-                            title = R.string.cr7
-                            year = R.string.cr7YEAR
+                            title = R.string.ramos
+                            year = R.string.ramosYEAR
 
                         }
                         secondArtwork -> {
                             currentArtwork = thirdArtwork
-                            title = R.string.benzema
-                            year = R.string.benzemaYEAR
+                            title = R.string.varane
+                            year = R.string.varaneYEAR
                         }
                         thirdArtwork -> {
                             currentArtwork = fourthArtwork
-                            title = R.string.ramos
-                            year = R.string.ramosYEAR
+                            title = R.string.marcelo
+                            year = R.string.marceloYEAR
                         }
                         fourthArtwork -> {
-                            currentArtwork = firstArtwork
+                            currentArtwork = fifthArtwork
+                            title = R.string.carvajal
+                            year = R.string.carvajalYEAR
+
+                        }
+                        fifthArtwork -> {
+                            currentArtwork = sixthArtwork
+                            title = R.string.kroos
+                            year = R.string.kroosYEAR
+
+                        }
+                        sixthArtwork -> {
+                            currentArtwork = seventhArtwork
                             title = R.string.modric
                             year = R.string.modricYEAR
 
                         }
+                        seventhArtwork -> {
+                            currentArtwork = eighthArtwork
+                            title = R.string.casemiro
+                            year = R.string.casemiroYEAR
+
+                        }
+                        eighthArtwork -> {
+                            currentArtwork = ninthArtwork
+                            title = R.string.bale
+                            year = R.string.baleYEAR
+
+                        }
+                        ninthArtwork -> {
+                            currentArtwork = tenthArtwork
+                            title = R.string.cr7
+                            year = R.string.cr7YEAR
+
+                        }
+                        tenthArtwork-> {
+                            currentArtwork = eleventhArtwork
+                            title = R.string.benzema
+                            year = R.string.benzemaYEAR
+
+                        }
+                        eleventhArtwork -> {
+                            currentArtwork = firstArtwork
+                            title = R.string.navas
+                            year = R.string.navasYEAR
+
+                        }
+
                     }
                 }, colors = ButtonDefaults.buttonColors(
                     backgroundColor = Color(0xff8B0000)
@@ -196,10 +277,12 @@ fun ArtSpaceAppUI() {
 }
 
 @Composable
-fun Heading(modifier: Modifier) {
-    Column(modifier = Modifier
-        .wrapContentSize(Alignment.TopCenter)
-        .padding(top = 20.dp)) {
+fun Heading() {
+    Column(
+        modifier = Modifier
+            .wrapContentSize(Alignment.TopCenter)
+            .padding(top = 20.dp)
+    ) {
 
         Text(
             text = "Real Madrid",
@@ -221,8 +304,7 @@ fun Heading(modifier: Modifier) {
 
 @Composable
 fun ArtworkDisplay(
-    @DrawableRes currentArtwork: Int,
-    modifier: Modifier = Modifier
+    @DrawableRes currentArtwork: Int
 ) {
     Surface(modifier = Modifier.shadow(7.dp), border = BorderStroke(3.dp, color = Color.DarkGray)) {
 
@@ -279,6 +361,6 @@ fun ArtworkTitle(
 
 @Preview
 @Composable
-fun ArtSpaceAppUIpreview() {
+fun ArtSpaceAppUIPreview() {
     ArtSpaceAppUI()
 }

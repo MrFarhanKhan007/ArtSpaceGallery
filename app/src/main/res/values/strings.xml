@@ -2,17 +2,40 @@
     <string name="app_name">ArtSpaceGallery</string>
 
 
+    <string name="navas">Keylor Navas</string>
+    <string name="navasYEAR">2017, Real Madrid</string>
+
+    <string name="ramos">Sergio Ramos</string>
+    <string name="ramosYEAR">2017, Real Madrid</string>
+
+    <string name="varane">Raphael Varane</string>
+    <string name="varaneYEAR">2022, Real Madrid</string>
+
+    <string name="marcelo">Marcelo</string>
+    <string name="marceloYEAR">2022, Real Madrid</string>
+
+    <string name="carvajal">Dani Carvajal</string>
+    <string name="carvajalYEAR">2021, Real Madrid</string>
+
+    <string name="kroos">Toni Kroos</string>
+    <string name="kroosYEAR">2022, Real Madrid</string>
+
+    <string name="casemiro">Casemiro</string>
+    <string name="casemiroYEAR">2019, Real Madrid</string>
+
     <string name="modric">Luka Modric</string>
-    <string name="modricYEAR">2023, Real Madrid</string>
+    <string name="modricYEAR">2022, Real Madrid</string>
+
+    <string name="bale">Gareth Bale</string>
+    <string name="baleYEAR">2021, Real Madrid</string>
 
     <string name="cr7">Cristiano Ronaldo</string>
     <string name="cr7YEAR">2017, Real Madrid</string>
 
     <string name="benzema">Karim Benzema</string>
-    <string name="benzemaYEAR">2023, Real Madrid</string>
+    <string name="benzemaYEAR">2021, Real Madrid</string>
 
-    <string name="ramos">Sergio Ramos</string>
-    <string name="ramosYEAR">2017, Real Madrid</string>
+
 
 
 
